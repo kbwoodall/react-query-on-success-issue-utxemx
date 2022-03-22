@@ -7,6 +7,8 @@ import './style.css';
 
 const Showdb = () => {
   console.log('in Showdb');
+  const d = Getstuff();
+  console.log('in Showdb data is ' + d);
 };
 const Getstuff = () => {
   const { data = [], status } = useQuery({
@@ -19,7 +21,7 @@ const Getstuff = () => {
       onSuccess: (data) => [...data].reverse(),
     },
   });
-  console.log(data);
+
   return data;
 };
 
