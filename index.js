@@ -7,7 +7,8 @@ import './style.css';
 
 const Showdb = () => {
   console.log('in Showdb');
-  const d = Getstuff();
+  //const d = Getstuff();
+  const d = 'ok';
   console.log('in Showdb data is ' + d);
 };
 const Getstuff = () => {
