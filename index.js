@@ -5,9 +5,8 @@ import { useQuery } from 'react-query';
 import Hello from './Hello';
 import './style.css';
 
-const Showdb = (data) => {
-  
- 
+const Showdb = () => {
+  console.log('in Showdb');
 };
 const Getstuff = () => {
   const { data = [], status } = useQuery({
@@ -25,9 +24,7 @@ const Getstuff = () => {
 };
 
 const App = () => {
-  const d = Getstuff();
-  Showdb(d)
-
+  Showdb();
   return (
     <div>
       <Hello name={'phone list'} />
