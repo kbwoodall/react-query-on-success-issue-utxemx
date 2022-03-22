@@ -16,10 +16,12 @@ const Getstuff = () => {
       onSuccess: (data) => [...data].reverse(),
     },
   });
+  return data;
   console.log('data ' + data);
 };
 const Showdb = () => {
   {
+    const data = Getstuff();
     data.map(({ name, phone }, index) => (
       <div key={index}>
         <h3>{phone}</h3>
