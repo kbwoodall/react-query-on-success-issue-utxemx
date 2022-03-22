@@ -33,7 +33,7 @@ const App = () => {
   return (
     <div>
       <Hello name={'phone list'} />
-      <p>Phone List</p>
+      <p>Phone List now</p>
     </div>
   );
 };
