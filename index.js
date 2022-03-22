@@ -7,7 +7,7 @@ import './style.css';
 
 const Showdb = () => {
   console.log('in Showdb');
-  //const d = Getstuff();
+  const arr2 = Getstuff();
   const d = 'ok';
   console.log('in Showdb data is ' + d);
 
@@ -46,7 +46,7 @@ const Showdb = () => {
   ];
 
   console.log('array ' + arr);
-  return arr;
+  return arr2;
 };
 
 const Getstuff = () => {
